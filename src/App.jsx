@@ -1,8 +1,15 @@
+import logo from './assets/images/logo.svg'
+import ilustration1 from './assets/images/illustration-1.svg'
+import quote from './assets/images/icon-quotes.svg'
+import avatar from './assets/images/avatar-testimonial.jpg'
+import phone from './assets/images/icon-phone.svg'
+import email from './assets/images/icon-email.svg'
+
 export default function App() {
   return (
     <div className="text-[--very-dark-blue] font-['Open_sans'] sm:text-base text-sm">
       <header className="flex justify-between lg:p-16 p-5">
-        <img className="max-w-[30%]" src="src/assets/images/logo.svg" alt="" />
+        <img className="max-w-[30%]" src={ logo } alt="" />
         
         <div className="flex lg:gap-14 sm:gap-8 gap-5">
           <a className="hover:text-[--very-dark-blue] my-auto" href="">Features</a>
@@ -30,7 +37,7 @@ export default function App() {
           </div>
         </div>
 
-        <img className="sm:order-last order-first sm:mb-0 m-5" src="src/assets/images/illustration-1.svg" alt="" />
+        <img className="sm:order-last order-first sm:mb-0 m-5" src={ ilustration1 } alt="" />
       </div>
 
       {/* segundo */}
@@ -55,7 +62,7 @@ export default function App() {
           </div>
 
           <div className="sm:w-80 w-64 lg:text-base text-sm sm:p-5 p-3 sm:space-y-5 space-y-3 shadow-[0px_0px_8px_4px] lg:mx-0 mx-auto shadow-red-100 rounded">
-            <img src="src/assets/images/icon-quotes.svg" alt="" />
+            <img src={ quote } alt="" />
           
             <p>
               Fylo has improved our team productivity by an order of magnitude. Since
@@ -63,7 +70,7 @@ export default function App() {
             </p>
           
             <div className="flex gap-2">
-              <img className="w-10 h-10 rounded-full" src="src/assets/images/avatar-testimonial.jpg" alt="" />
+              <img className="w-10 h-10 rounded-full" src={ avatar } alt="" />
             
               <div>
                 <h2>Kyle Burton</h2>
@@ -96,11 +103,11 @@ export default function App() {
 
       {/* footer */}
       <footer className="sm:flex sm:space-y-0 space-y-10 relative justify-between bg-[--very-dark-blue] sm:px-10 md:px-20 sm:py-28 py-16 px-5 text-white">
-        <img className="absolute top-0 mt-12 logo-white" src="src/assets/images/logo.svg" alt="" />
+        <img className="absolute top-0 mt-12 logo-white" src={ logo } alt="" />
         
         <div className="space-y-5">
-          <p className="flex gap-5"><img className="my-auto" src="src/assets/images/icon-phone.svg" alt="" />Phone: +1-543-123-4567</p>
-          <p className="flex gap-5"><img className="my-auto" src="src/assets/images/icon-email.svg" alt="" />example@fylo.com</p>
+          <p className="flex gap-5"><img className="my-auto" src={ phone } alt="" />Phone: +1-543-123-4567</p>
+          <p className="flex gap-5"><img className="my-auto" src={ email } alt="" />example@fylo.com</p>
         </div>
         
         <div className="flex flex-col gap-5">

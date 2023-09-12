@@ -54,12 +54,10 @@
     }
 
     .a_image::after {
-        content: url('src/assets/images/icon-arrow.svg');
         @apply pl-2 absolute mt-0.5
     }
 
     .a_image:hover::after {
-        content: url('src/assets/images/icon-arrow-hover.svg');
         @apply pl-2 absolute mt-0.5
     }
 

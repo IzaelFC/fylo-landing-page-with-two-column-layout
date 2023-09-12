@@ -1,7 +1,10 @@
 import logo from './assets/images/logo.svg'
 import ilustration1 from './assets/images/illustration-1.svg'
+import ilustration2 from './assets/images/illustration-2.svg'
 import quote from './assets/images/icon-quotes.svg'
 import avatar from './assets/images/avatar-testimonial.jpg'
+import arrow from './assets/images/icon-arrow.svg'
+import arrow_hover from './assets/images/icon-arrow-hover.svg'
 import phone from './assets/images/icon-phone.svg'
 import email from './assets/images/icon-email.svg'
 
@@ -57,7 +60,7 @@ export default function App() {
             </p>
             
             <div className="lg:block flex">
-              <a className="mx-auto hover:text-[--moderate-cyan-hover] text-[--moderate-cyan] border-b hover:border-[--moderate-cyan-hover] border-[--moderate-cyan] py-1 pr-6 a_image" href="">See how Fylo works</a>
+              <a className={ `mx-auto hover:text-[--moderate-cyan-hover] text-[--moderate-cyan] border-b hover:border-[--moderate-cyan-hover] border-[--moderate-cyan] py-1 pr-6` + ` after:content-[url(${ arrow })] hover:after:content-[url(${arrow_hover})] a_image` } href="">See how Fylo works</a>
             </div>
           </div>
 
@@ -80,7 +83,7 @@ export default function App() {
           </div>
         </div>
 
-        <img className="lg:order-last order-first sm:mx-auto lg:mx-0" src="src/assets/images/illustration-2.svg" alt="" />
+        <img className="lg:order-last order-first sm:mx-auto lg:mx-0" src={ ilustration2 } alt="" />
       </div>
 
       {/* early access */}

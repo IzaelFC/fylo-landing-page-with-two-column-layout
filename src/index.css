@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Primary */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /* Accent */
+
+    --bright-blue: hsl(224, 93%, 58%);
+    --bright-blue-hover: hsl(224, 93%, 70%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --moderate-cyan-hover: #6bc7b8;
+
+    /* Neutral */
+
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+
+@layer components {
+    h1 {
+        @apply font-bold sm:text-4xl text-2xl
+    }
+
+    p {
+        @apply sm:text-base text-sm
+    }
+
+    input {
+        @apply sm:w-[50%] w-full py-2 outline-none border invalid:border-red-300 border-[--very-dark-blue] px-5 rounded-sm
+    }
+
+    button {
+        @apply hover:bg-[--bright-blue-hover] bg-[--bright-blue] text-white hover:drop-shadow-lg font-semibold py-2 px-10 rounded
+    }
+
+    span {
+        @apply text-[--desaturated-blue]
+    }
+
+    img {
+        @apply sm:max-w-[50%]
+    }
+
+    a {
+        @apply hover:text-[--bright-blue-hover]
+    }
+
+    .a_image::after {
+        content: url('src/assets/images/icon-arrow.svg');
+        @apply pl-2 absolute mt-0.5
+    }
+
+    .a_image:hover::after {
+        content: url('src/assets/images/icon-arrow-hover.svg');
+        @apply pl-2 absolute mt-0.5
+    }
+
+    .logo-white {
+        filter: brightness(0) invert(1);
+    }
+
+    ion-icon {
+        @apply p-2 border rounded-full group-hover:border-[--bright-blue-hover]
+    }
+}

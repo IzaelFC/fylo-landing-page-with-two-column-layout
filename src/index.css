@@ -53,14 +53,6 @@
         @apply hover:text-[--bright-blue-hover]
     }
 
-    .a_image::after {
-        @apply pl-2 absolute mt-0.5
-    }
-
-    .a_image:hover::after {
-        @apply pl-2 absolute mt-0.5
-    }
-
     .logo-white {
         filter: brightness(0) invert(1);
     }

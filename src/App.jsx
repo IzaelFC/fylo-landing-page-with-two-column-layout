@@ -60,7 +60,7 @@ export default function App() {
             </p>
             
             <div className="lg:block flex">
-              <a className={ `mx-auto hover:text-[--moderate-cyan-hover] text-[--moderate-cyan] border-b hover:border-[--moderate-cyan-hover] border-[--moderate-cyan] py-1 pr-6` + ` after:content-[url(${ arrow })] hover:after:content-[url(${arrow_hover})] a_image` } href="">See how Fylo works</a>
+              <a className="mx-auto hover:text-[--moderate-cyan-hover] text-[--moderate-cyan] border-b hover:border-[--moderate-cyan-hover] border-[--moderate-cyan] py-1 pr-6 a_image" href="">See how Fylo works</a>
             </div>
           </div>
 

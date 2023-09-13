@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      .a_image::after {
+        content: url('/src/assets/images/icon-arrow.svg');
+          @apply pl-2 absolute mt-0.5
+      }
+
+      .a_image:hover::after {
+        content: url('/src/assets/images/icon-arrow-hover.svg');
+          @apply pl-2 absolute mt-0.5
+      }
+    </style>
     <title>Vite + React</title>
   </head>
   <body>
